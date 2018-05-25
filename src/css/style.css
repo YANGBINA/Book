@@ -1,0 +1,629 @@
+@charset "UTF-8";
+* {
+  margin: 0px;
+  padding: 0px;
+  text-decoration: none;
+  box-sizing: border-box;
+  font-size: 0.32rem;
+  font-weight: 400;
+  font-style: normal;
+  font-family: "微软雅黑";
+  text-size-adjust: 100%;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+html {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  user-select: none;
+  font-size: 0.32rem;
+}
+
+img,
+div,
+body,
+html,
+ul,
+li,
+a {
+  -webkit-touch-callout: none;
+  color: black;
+}
+
+input,
+button {
+  outline: 0;
+}
+
+button {
+  cursor: pointer;
+}
+
+input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder {
+  color: #ccc;
+}
+
+input {
+  border: 0;
+}
+
+html,
+body,
+.wrap {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.one {
+  color: orange;
+  border-bottom: 3px solid orange;
+}
+
+.header {
+  width: 100%;
+  height: 1rem;
+  display: flex;
+  line-height: 1rem;
+}
+
+.header p {
+  width: 25%;
+  height: 1rem;
+  text-align: center;
+}
+
+.header i {
+  width: 25%;
+  text-align: center;
+}
+
+.main {
+  width: 100%;
+  flex: 1;
+  overflow: hidden;
+  height: auto;
+}
+
+.main .main2 {
+  width: 100%;
+  height: 100%;
+}
+
+.main .main2 .main3 {
+  overflow-y: scroll;
+  width: 100%;
+}
+
+.main .main2 .main3 #tab1 .first {
+  width: 100%;
+  height: 1rem;
+  display: flex;
+  align-items: center;
+  padding-left: 0.7rem;
+}
+
+.main .main2 .main3 #tab1 .swiper-slide img {
+  width: 100%;
+  height: auto;
+}
+
+.main .main2 .main3 #tab1 .nav {
+  width: 100%;
+  height: 2rem;
+}
+
+.main .main2 .main3 #tab1 .nav ul {
+  display: flex;
+  width: 100%;
+  padding-top: 0.5rem;
+}
+
+.main .main2 .main3 #tab1 .nav ul li {
+  width: 20%;
+  text-align: center;
+}
+
+.main .main2 .main3 #tab1 .nav ul li img {
+  width: 0.8rem;
+  height: 0.8rem;
+}
+
+.main .main2 .main3 #tab1 .zh {
+  width: 100%;
+  height: auto;
+  padding-top: 0.2rem;
+}
+
+.main .main2 .main3 #tab1 .zh div {
+  padding-top: 0.3rem;
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.main .main2 .main3 #tab1 .zh div a {
+  width: 33%;
+  text-align: center;
+}
+
+.main .main2 .main3 #tab1 .zh div a dl {
+  padding-top: 0.3rem;
+  height: auto;
+}
+
+.main .main2 .main3 #tab1 .zh div a dl dt {
+  text-align: center;
+  width: 2rem;
+  height: 3rem;
+}
+
+.main .main2 .main3 #tab1 .zh div a dl dt img {
+  width: 100%;
+  height: 100%;
+}
+
+.main .main2 .main3 #tab1 .zh div a dl dd {
+  text-align: center;
+  width: 2rem;
+}
+
+.main .main2 .main3 #tab1 .zh .ck {
+  width: 100%;
+  height: 0.8rem;
+  padding-left: 40%;
+  padding-top: 0.2rem;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+}
+
+.main .main2 .main3 #tab1 .tj {
+  width: 100%;
+  height: auto;
+  padding-top: 0.2rem;
+}
+
+.main .main2 .main3 #tab1 .tj ul {
+  width: 100%;
+  height: auto;
+}
+
+.main .main2 .main3 #tab1 .tj ul dl {
+  width: 100%;
+  display: flex;
+  padding-top: 0.5rem;
+}
+
+.main .main2 .main3 #tab1 .tj ul dl dt {
+  width: 30%;
+}
+
+.main .main2 .main3 #tab1 .tj ul dl dt img {
+  width: 2rem;
+  height: auto;
+}
+
+.main .main2 .main3 #tab1 .tj ul dl dd {
+  width: 70%;
+  padding-left: 0.3rem;
+}
+
+.main .main2 .main3 #tab1 .tj ul dl dd h2 {
+  font-size: 0.4rem;
+}
+
+.main .main2 .main3 #tab1 .tj ul dl dd p {
+  width: 100%;
+  height: 0.8rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-top: 0.2rem;
+}
+
+.main .main2 .main3 #tab1 .tj ul dl dd i span {
+  border: 1px solid green;
+  width: 0.5rem;
+  height: 0.2rem;
+  color: green;
+}
+
+.main .main2 .main3 #tab1 .tj .two {
+  line-height: 1rem;
+  border-bottom: 1px solid #ccc;
+}
+
+.main .main2 .main3 #tab1 .tj .two b {
+  color: orange;
+}
+
+.main .main2 .main3 #tab1 .tj .two font {
+  font-size: 0.3rem;
+  color: #ccc;
+}
+
+.main .main2 .main3 #tab1 .tj div {
+  width: 100%;
+  height: 1rem;
+  display: flex;
+}
+
+.main .main2 .main3 #tab1 .tj div p {
+  width: 50%;
+  height: 1rem;
+  text-align: center;
+  line-height: 1rem;
+}
+
+.main .main2 .main3 #tab1 .girl-love {
+  width: 100%;
+  height: auto;
+}
+
+.main .main2 .main3 #tab1 .girl-love ul {
+  width: 100%;
+  height: auto;
+}
+
+.main .main2 .main3 #tab1 .girl-love ul dl {
+  width: 100%;
+  display: flex;
+  padding-top: 0.5rem;
+}
+
+.main .main2 .main3 #tab1 .girl-love ul dl dt {
+  width: 30%;
+}
+
+.main .main2 .main3 #tab1 .girl-love ul dl dt img {
+  width: 2rem;
+  height: auto;
+}
+
+.main .main2 .main3 #tab1 .girl-love ul dl dd {
+  width: 70%;
+  padding-left: 0.3rem;
+}
+
+.main .main2 .main3 #tab1 .girl-love ul dl dd h2 {
+  font-size: 0.4rem;
+}
+
+.main .main2 .main3 #tab1 .girl-love ul dl dd p {
+  width: 100%;
+  height: 0.8rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-top: 0.2rem;
+}
+
+.main .main2 .main3 #tab1 .girl-love ul dl dd i span {
+  border: 1px solid green;
+  width: 0.5rem;
+  height: 0.2rem;
+  color: green;
+}
+
+.main .main2 .main3 #tab1 .boy-love {
+  width: 100%;
+  height: auto;
+}
+
+.main .main2 .main3 #tab1 .boy-love ul {
+  width: 100%;
+  height: auto;
+}
+
+.main .main2 .main3 #tab1 .boy-love ul dl {
+  width: 100%;
+  display: flex;
+  padding-top: 0.5rem;
+}
+
+.main .main2 .main3 #tab1 .boy-love ul dl dt {
+  width: 30%;
+}
+
+.main .main2 .main3 #tab1 .boy-love ul dl dt img {
+  width: 2rem;
+  height: auto;
+}
+
+.main .main2 .main3 #tab1 .boy-love ul dl dd {
+  width: 70%;
+  padding-left: 0.3rem;
+}
+
+.main .main2 .main3 #tab1 .boy-love ul dl dd h2 {
+  font-size: 0.4rem;
+}
+
+.main .main2 .main3 #tab1 .boy-love ul dl dd p {
+  width: 100%;
+  height: 0.8rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-top: 0.2rem;
+}
+
+.main .main2 .main3 #tab1 .boy-love ul dl dd i span {
+  border: 1px solid green;
+  width: 0.5rem;
+  height: 0.2rem;
+  color: green;
+}
+
+.main .main2 .main3 #tab1 .freeorchange {
+  width: 100%;
+  height: auto;
+}
+
+.main .main2 .main3 #tab1 .freeorchange div {
+  padding-top: 0.3rem;
+  display: flex;
+  width: 100%;
+  height: auto;
+}
+
+.main .main2 .main3 #tab1 .freeorchange div dl {
+  width: 33%;
+  height: auto;
+}
+
+.main .main2 .main3 #tab1 .freeorchange div dl dt {
+  text-align: center;
+}
+
+.main .main2 .main3 #tab1 .freeorchange div dl dt img {
+  width: 2rem;
+  height: auto;
+}
+
+.main .main2 .main3 #tab1 .freeorchange div dl dd {
+  text-align: center;
+}
+
+.main .main2 .main3 #tab1 .freeorchange .w {
+  width: 100%;
+  height: 1rem;
+  padding-top: 0.4rem;
+  padding-left: 40%;
+  border-bottom: 1px solid #ccc;
+  border-top: 1px solid #ccc;
+}
+
+.main .main2 .main3 #tab1 .nav5 {
+  width: 100%;
+  height: auto;
+}
+
+.main .main2 .main3 #tab1 .nav5 ul {
+  width: 100%;
+  height: auto;
+  display: flex;
+}
+
+.main .main2 .main3 #tab1 .nav5 ul li {
+  width: 50%;
+  height: auto;
+}
+
+.main .main2 .main3 #tab1 .nav5 ul li img {
+  text-align: center;
+  width: 90%;
+  height: auto;
+}
+
+.main .main2 .main3 #tab1 .nav7 {
+  width: 100%;
+  height: auto;
+}
+
+.main .main2 .main3 #tab1 .nav7 dl {
+  padding-top: 0.4rem;
+  display: flex;
+  width: 100%;
+  height: auto;
+}
+
+.main .main2 .main3 #tab1 .nav7 dl dt {
+  width: 50%;
+  height: auto;
+}
+
+.main .main2 .main3 #tab1 .nav7 dl dt img {
+  width: 3rem;
+  height: auto;
+}
+
+.main .main2 .main3 #tab1 .nav7 dl dd {
+  width: 50%;
+  height: auto;
+  text-align: center;
+  padding-top: 20%;
+}
+
+.main .main2 .main3 .loading {
+  text-align: center;
+  line-height: 1rem;
+  width: 100%;
+  height: 1rem;
+  background: #eee;
+  box-sizing: border-box;
+  padding: 0.1rem;
+}
+
+.main .main2 .main3 .loading .cont {
+  width: 0.8rem;
+  height: 0.8rem;
+  margin: 0 auto;
+  position: relative;
+  animation: rotates 1s linear infinite;
+}
+
+.main .main2 .main3 .loading .cont span {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 0.04rem;
+  height: 0.2rem;
+  background: #999;
+  transform-origin: center 0.4rem;
+}
+
+.main .main2 .main3 .loading .cont .dot1 {
+  opacity: 0.1;
+  transform: rotate(30deg);
+}
+
+.main .main2 .main3 .loading .cont .dot2 {
+  opacity: 0.2;
+  transform: rotate(60deg);
+}
+
+.main .main2 .main3 .loading .cont .dot3 {
+  opacity: 0.3;
+  transform: rotate(90deg);
+}
+
+.main .main2 .main3 .loading .cont .dot4 {
+  opacity: 0.4;
+  transform: rotate(120deg);
+}
+
+.main .main2 .main3 .loading .cont .dot5 {
+  opacity: 0.5;
+  transform: rotate(150deg);
+}
+
+.main .main2 .main3 .loading .cont .dot6 {
+  opacity: 0.6;
+  transform: rotate(180deg);
+}
+
+.main .main2 .main3 .loading .cont .dot7 {
+  opacity: 0.7;
+  transform: rotate(210deg);
+}
+
+.main .main2 .main3 .loading .cont .dot8 {
+  opacity: 0.8;
+  transform: rotate(240deg);
+}
+
+.main .main2 .main3 .loading .cont .dot9 {
+  opacity: 0.9;
+  transform: rotate(270deg);
+}
+
+.main .main2 .main3 .loading .cont .dot10 {
+  opacity: 1;
+  transform: rotate(300deg);
+}
+
+.main .main2 .main3 .loading .cont .dot11 {
+  opacity: 1.1;
+  transform: rotate(330deg);
+}
+
+.main .main2 .main3 .loading .cont .dot12 {
+  opacity: 1.2;
+  transform: rotate(360deg);
+}
+
+.main #tab3 {
+  width: 100%;
+  height: auto;
+  overflow-y: scroll;
+}
+
+.main #tab3 nav {
+  width: 100%;
+  height: 1rem;
+  display: flex;
+  padding-top: 0.4rem;
+}
+
+.main #tab3 nav .djj {
+  text-align: center;
+  border: 2px solid #ccc;
+  margin-left: 1rem;
+  width: 0.7rem;
+  height: 0.7rem;
+  background: url(http://image.read.duokan.com/mfsv2/download/fdsc3/p01yLF3fEj8l/b7UfAdlfufQKML.png) no-repeat center;
+}
+
+.main #tab3 nav .d {
+  width: 70%;
+  height: 0.7rem;
+  text-align: center;
+  border: 1px solid #ccc;
+  padding-top: 0.2rem;
+}
+
+.main #tab3 .nav7 {
+  width: 100%;
+  height: auto;
+}
+
+.main #tab3 .nav7 dl {
+  padding-top: 0.4rem;
+  display: flex;
+  width: 100%;
+  height: auto;
+}
+
+.main #tab3 .nav7 dl dt {
+  width: 50%;
+  height: auto;
+}
+
+.main #tab3 .nav7 dl dt img {
+  width: 3rem;
+  height: auto;
+}
+
+.main #tab3 .nav7 dl dd {
+  width: 50%;
+  height: auto;
+  text-align: center;
+  padding-top: 20%;
+}
+
+.main #tab3 .nav8 {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.main #tab3 .nav8 dl {
+  padding-top: 0.3rem;
+  width: 33%;
+  height: auto;
+}
+
+.main #tab3 .nav8 dl dt {
+  text-align: center;
+}
+
+.main #tab3 .nav8 dl dt img {
+  width: 2rem;
+  height: auto;
+}
+
+.main #tab3 .nav8 dl dd {
+  text-align: center;
+}
+
+@keyframes rotates {
+  100% {
+    transform: rotate(360deg);
+  }
+}

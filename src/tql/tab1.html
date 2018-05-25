@@ -1,0 +1,156 @@
+<div class="first">
+    <p><i class="iconfont icon-fangdajing">  </i><input type="text" placeholder="输入书名/作者/关键字"></p>
+</div>
+<div class="swiper-container banner swiper-no-swiping">
+    <ul class="swiper-wrapper">
+        {{#each data0.data.data}}
+        <li class="swiper-slide hhh">
+            <a href="javascript:;"><img src="{{ad_pic_url}}"></a>
+        </li>
+        {{/each}}
+    </ul>
+</div>
+<div class="nav">
+    <ul class="top-home__btn">
+        <li data-href="#page=channel&amp;id=664" data-title="限免"><img class="top-home__icon" src="http://image.read.duokan.com/mfsv2/download/s010/p015iBxwdkmU/5wc5uzYhLZ7iVa.png">
+            <p class="top-home__des">限免</p>
+        </li>
+        <li data-href="#page=channel&amp;id=370" data-title="女生"><img class="top-home__icon" src="http://image.read.duokan.com/mfsv2/download/s010/p01LWZmXGCpy/aSrSq6Llgt9PqE.png">
+            <p class="top-home__des">女生</p>
+        </li>
+        <li data-href="#page=channel&amp;id=369" data-title="男生"><img class="top-home__icon" src="http://image.read.duokan.com/mfsv2/download/fdsc3/p01NVfuCskSL/W9VPXMnDunLwGT.png">
+            <p class="top-home__des">男生</p>
+        </li>
+        <li data-href="/hs/market/cate" data-title="分类"><img class="top-home__icon" src="http://image.read.duokan.com/mfsv2/download/s010/p01pz5NtyRI0/2ENONnvOg23NXM.png">
+            <p class="top-home__des">分类</p>
+        </li>
+        <li data-href="/hs/market/rank" data-title="排行"><img class="top-home__icon" src="http://image.read.duokan.com/mfsv2/download/s010/p010kK7M5VyH/8kPz9nKvRXyu1k.png">
+            <p class="top-home__des">排行</p>
+        </li>
+    </ul>
+</div>
+<div class="zh">
+    <p style="width: 100%;height: 0.6rem;font-size: 0.4rem;border-left: 4px solid  orange;line-height: 0.6rem;padding-left: 0.3rem;">{{data1.ad_name}}</p>
+    <div>
+        {{#each data1.data.data}}
+
+        <a href="../index3.html">
+            <dl> <dt><img src="{{cover}}" alt=""></dt>
+                <dd>{{authors}}</dd>
+            </dl>
+        </a>
+
+        {{/each}}
+
+    </div>
+    <div class="ck">
+        <p>查看更多</p>
+    </div>
+</div>
+<div class="tj">
+    <h2 style="width: 100%;height: 0.6rem;font-size: 0.4rem;border-left: 4px solid  orange;line-height: 0.6rem;padding-left: 0.3rem;">{{data2.ad_name}}</h2>
+    <ul>
+        {{#iflength data2.data.data}} {{#each this}} {{#if @index}}
+        <li class="two">
+            <a href="javascript:;">
+                <b>0{{@index}}</b>
+                <span>{{title}}</span>
+                <font>{{authors}}</font>
+            </a>
+        </li>
+        {{else}}
+        <li class="one">
+            <a href="javascript:;">
+                <dl>
+                    <dt><img src="{{cover}}"><b>{{allow_free_read}}</b></dt>
+                    <dd>
+                        <h2>{{title}}</h2>
+                        <b>{{authors}}</b>
+                        <p>{{summary}}</p>
+                        <i>{{#each tags}}
+                            <span>{{this}}</span> {{/each}}
+                        </i>
+                    </dd>
+                </dl>
+            </a>
+        </li>
+        {{/if}} {{/each}} {{/iflength}} </ul>
+    <div>
+        <p>换一换</p>
+        <p>查看全部</p>
+    </div>
+</div>
+<div class="girl-love">
+    <h2 style="width: 100%;height: 0.6rem;font-size: 0.4rem;border-left: 4px solid  orange;line-height: 0.6rem;padding-left: 0.3rem;">{{data3.ad_name}}</h2>
+    <ul>
+        {{#each data3.data.data}}
+        <li class="one">
+            <a href="javascript:;">
+                <dl>
+                    <dt><img src="{{cover}}"><b>{{allow_free_read}}</b></dt>
+                    <dd>
+                        <h2>{{title}}</h2>
+                        <b>{{authors}}</b>
+                        <p>{{summary}}</p>
+                        <i>{{#each tags}}
+                            <span>{{this}}</span> {{/each}}
+                        </i>
+                    </dd>
+                </dl>
+            </a>
+        </li>
+        {{/each}}
+    </ul>
+</div>
+<!--男生最爱-->
+<div class="boy-love">
+    <h2 style="width: 100%;height: 0.6rem;font-size: 0.4rem;border-left: 4px solid  orange;line-height: 0.6rem;padding-left: 0.3rem;">{{data4.ad_name}}</h2>
+    <ul>
+        {{#each data4.data.data}}
+        <li class="one">
+            <a href="javascript:;">
+                <dl>
+                    <dt><img src="{{cover}}"><b>{{allow_free_read}}</b>{{#if finish}}<span>完结</span>{{else}}<span>连载中</span>{{/if}}</dt>
+                    <dd>
+                        <h2>{{title}}</h2>
+                        <b>{{authors}}</b>
+                        <p>{{summary}}</p>
+                        <i>
+                            {{#each tags}}
+                            <span>{{this}}</span> 
+                            {{/each}}
+                        </i>
+                    </dd>
+                </dl>
+            </a>
+        </li>
+        {{/each}}
+    </ul>
+</div>
+<!--限时免费-->
+<div class="freeorchange">
+    <h2 style="width: 100%;height: 0.6rem;font-size: 0.4rem;border-left: 4px solid  orange;line-height: 0.6rem;padding-left: 0.3rem;">{{data5.ad_name}}</h2>
+    <div>
+        {{#each data5.data.data}}
+        <dl>
+            <dt><img src="{{data.book_cover}}"></dt>
+            <dd>{{ad_name}}</dd>
+        </dl>
+
+        {{/each}}
+    </div>
+    <div class="w">
+        <a href="javasript:;">更多限免佳作>></a>
+    </div>
+
+
+</div>
+<!--精选专题-->
+<div class="nav5">
+    <h2 style="width: 100%;height: 0.6rem;font-size: 0.4rem;border-left: 4px solid  orange;line-height: 0.6rem;padding-left: 0.3rem;">{{data6.ad_name}}</h2>
+    <ul>
+        {{#each data6.data.data}}
+        <li><img src="{{ad_pic_url}}" alt=""></li>
+        {{/each}}
+    </ul>
+</div>q

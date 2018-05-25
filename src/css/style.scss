@@ -1,0 +1,502 @@
+@charset "UTF-8";
+* {
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-size: 0.32rem;
+    font-weight: 400;
+    font-style: normal;
+    font-family: "微软雅黑";
+    text-size-adjust: 100%;
+}
+
+ul,
+li {
+    list-style: none;
+}
+
+html {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    user-select: none;
+    font-size: 0.32rem;
+}
+
+img,
+div,
+body,
+html,
+ul,
+li,
+a {
+    -webkit-touch-callout: none;
+    color: black;
+}
+
+input,
+button {
+    outline: 0;
+}
+
+button {
+    cursor: pointer;
+}
+
+input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder {
+    color: #ccc;
+}
+
+input {
+    border: 0
+}
+
+html,
+body,
+.wrap {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.one {
+    color: orange;
+    border-bottom: 3px solid orange;
+}
+
+.header {
+    width: 100%;
+    height: 1rem;
+    display: flex;
+    line-height: 1rem;
+    p {
+        width: 25%;
+        height: 1rem;
+        text-align: center;
+    }
+    i {
+        width: 25%;
+        text-align: center;
+    }
+}
+
+.main {
+    width: 100%;
+    flex: 1;
+    overflow: hidden;
+    height: auto;
+    .main2 {
+        width: 100%;
+        height: 100%;
+        .main3 {
+            overflow-y: scroll;
+            width: 100%;
+            #tab1 {
+                .first {
+                    width: 100%;
+                    height: 1rem;
+                    display: flex;
+                    align-items: center;
+                    padding-left: 0.7rem;
+                }
+                .swiper-slide {
+                    img {
+                        width: 100%;
+                        height: auto;
+                    }
+                }
+                .nav {
+                    width: 100%;
+                    height: 2rem;
+                    ul {
+                        display: flex;
+                        width: 100%;
+                        padding-top: 0.5rem;
+                        li {
+                            width: 20%;
+                            text-align: center;
+                            img {
+                                width: 0.8rem;
+                                height: 0.8rem;
+                            }
+                        }
+                    }
+                }
+                .zh {
+                    width: 100%;
+                    height: auto;
+                    padding-top: 0.2rem;
+                    div {
+                        padding-top: 0.3rem;
+                        width: 100%;
+                        height: auto;
+                        display: flex;
+                        flex-wrap: wrap;
+                        a {
+                            width: 33%;
+                            text-align: center;
+                            dl {
+                                padding-top: 0.3rem;
+                                height: auto;
+                                dt {
+                                    text-align: center;
+                                    width: 2rem;
+                                    height: 3rem;
+                                    img {
+                                        width: 100%;
+                                        height: 100%;
+                                    }
+                                }
+                                dd {
+                                    text-align: center;
+                                    width: 2rem;
+                                }
+                            }
+                        }
+                    }
+                    .ck {
+                        width: 100%;
+                        height: 0.8rem;
+                        padding-left: 40%;
+                        padding-top: 0.2rem;
+                        border-top: 1px solid #ccc;
+                        border-bottom: 1px solid #ccc;
+                    }
+                }
+                .tj {
+                    width: 100%;
+                    height: auto;
+                    padding-top: 0.2rem;
+                    ul {
+                        width: 100%;
+                        height: auto;
+                        dl {
+                            width: 100%;
+                            display: flex;
+                            padding-top: 0.5rem;
+                            dt {
+                                width: 30%;
+                                img {
+                                    width: 2rem;
+                                    height: auto;
+                                }
+                            }
+                            dd {
+                                width: 70%;
+                                padding-left: 0.3rem;
+                                h2 {
+                                    font-size: 0.4rem;
+                                }
+                                p {
+                                    width: 100%;
+                                    height: 0.8rem;
+                                    overflow: hidden;
+                                    text-overflow: ellipsis;
+                                    margin-top: 0.2rem;
+                                }
+                                i {
+                                    span {
+                                        border: 1px solid green;
+                                        width: 0.5rem;
+                                        height: 0.2rem;
+                                        color: green;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .two {
+                        line-height: 1rem;
+                        border-bottom: 1px solid #ccc;
+                        b {
+                            color: orange;
+                        }
+                        font {
+                            font-size: 0.3rem;
+                            color: #ccc;
+                        }
+                    }
+                    div {
+                        width: 100%;
+                        height: 1rem;
+                        display: flex;
+                        p {
+                            width: 50%;
+                            height: 1rem;
+                            text-align: center;
+                            line-height: 1rem;
+                        }
+                    }
+                }
+                .girl-love {
+                    width: 100%;
+                    height: auto;
+                    ul {
+                        width: 100%;
+                        height: auto;
+                        dl {
+                            width: 100%;
+                            display: flex;
+                            padding-top: 0.5rem;
+                            dt {
+                                width: 30%;
+                                img {
+                                    width: 2rem;
+                                    height: auto;
+                                }
+                            }
+                            dd {
+                                width: 70%;
+                                padding-left: 0.3rem;
+                                h2 {
+                                    font-size: 0.4rem;
+                                }
+                                p {
+                                    width: 100%;
+                                    height: 0.8rem;
+                                    overflow: hidden;
+                                    text-overflow: ellipsis;
+                                    margin-top: 0.2rem;
+                                }
+                                i {
+                                    span {
+                                        border: 1px solid green;
+                                        width: 0.5rem;
+                                        height: 0.2rem;
+                                        color: green;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                .boy-love {
+                    width: 100%;
+                    height: auto;
+                    ul {
+                        width: 100%;
+                        height: auto;
+                        dl {
+                            width: 100%;
+                            display: flex;
+                            padding-top: 0.5rem;
+                            dt {
+                                width: 30%;
+                                img {
+                                    width: 2rem;
+                                    height: auto;
+                                }
+                            }
+                            dd {
+                                width: 70%;
+                                padding-left: 0.3rem;
+                                h2 {
+                                    font-size: 0.4rem;
+                                }
+                                p {
+                                    width: 100%;
+                                    height: 0.8rem;
+                                    overflow: hidden;
+                                    text-overflow: ellipsis;
+                                    margin-top: 0.2rem;
+                                }
+                                i {
+                                    span {
+                                        border: 1px solid green;
+                                        width: 0.5rem;
+                                        height: 0.2rem;
+                                        color: green;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                .freeorchange {
+                    width: 100%;
+                    height: auto;
+                    div {
+                        padding-top: 0.3rem;
+                        display: flex;
+                        width: 100%;
+                        height: auto;
+                        dl {
+                            width: 33%;
+                            height: auto;
+                            dt {
+                                text-align: center;
+                                img {
+                                    width: 2rem;
+                                    height: auto;
+                                }
+                            }
+                            dd {
+                                text-align: center;
+                            }
+                        }
+                    }
+                    .w {
+                        width: 100%;
+                        height: 1rem;
+                        padding-top: 0.4rem;
+                        padding-left: 40%;
+                        border-bottom: 1px solid #ccc;
+                        border-top: 1px solid #ccc;
+                    }
+                }
+                .nav5 {
+                    width: 100%;
+                    height: auto;
+                    ul {
+                        width: 100%;
+                        height: auto;
+                        display: flex;
+                        li {
+                            width: 50%;
+                            height: auto;
+                            img {
+                                text-align: center;
+                                width: 90%;
+                                height: auto;
+                            }
+                        }
+                    }
+                }
+                .nav7 {
+                    width: 100%;
+                    height: auto;
+                    dl {
+                        padding-top: 0.4rem;
+                        display: flex;
+                        width: 100%;
+                        height: auto;
+                        dt {
+                            width: 50%;
+                            height: auto;
+                            img {
+                                width: 3rem;
+                                height: auto;
+                            }
+                        }
+                        dd {
+                            width: 50%;
+                            height: auto;
+                            text-align: center;
+                            padding-top: 20%;
+                        }
+                    }
+                }
+            }
+            .loading {
+                text-align: center;
+                line-height: 1rem;
+                width: 100%;
+                height: 1rem;
+                background: #eee;
+                box-sizing: border-box;
+                padding: 0.1rem;
+                .cont {
+                    width: 0.8rem;
+                    height: 0.8rem;
+                    margin: 0 auto;
+                    position: relative;
+                    animation: rotates 1s linear infinite;
+                    span {
+                        position: absolute;
+                        top: 0;
+                        left: 50%;
+                        width: 0.04rem;
+                        height: 0.2rem;
+                        background: #999;
+                        transform-origin: center 0.4rem;
+                    }
+                    @for $i from 1 to 13 {
+                        .dot#{$i} {
+                            opacity: 0.1 * $i;
+                            transform: rotate($i * 30deg);
+                        }
+                    }
+                }
+            }
+        }
+    }
+    #tab3 {
+        width: 100%;
+        height: auto;
+        overflow-y: scroll;
+        nav {
+            width: 100%;
+            height: 1rem;
+            display: flex;
+            padding-top: 0.4rem;
+            .djj {
+                text-align: center;
+                border: 2px solid #ccc;
+                margin-left: 1rem;
+                width: 0.7rem;
+                height: 0.7rem;
+                background: url(http://image.read.duokan.com/mfsv2/download/fdsc3/p01yLF3fEj8l/b7UfAdlfufQKML.png) no-repeat center;
+            }
+            .d {
+                width: 70%;
+                height: 0.7rem;
+                text-align: center;
+                border: 1px solid #ccc;
+                padding-top: 0.2rem;
+            }
+        }
+        .nav7 {
+            width: 100%;
+            height: auto;
+            dl {
+                padding-top: 0.4rem;
+                display: flex;
+                width: 100%;
+                height: auto;
+                dt {
+                    width: 50%;
+                    height: auto;
+                    img {
+                        width: 3rem;
+                        height: auto;
+                    }
+                }
+                dd {
+                    width: 50%;
+                    height: auto;
+                    text-align: center;
+                    padding-top: 20%;
+                }
+            }
+        }
+        .nav8 {
+            width: 100%;
+            height: auto;
+            display: flex;
+            flex-wrap: wrap;
+            dl {
+                padding-top: 0.3rem;
+                width: 33%;
+                height: auto;
+                dt {
+                    text-align: center;
+                    img {
+                        width: 2rem;
+                        height: auto;
+                    }
+                }
+                dd {
+                    text-align: center;
+                }
+            }
+        }
+    }
+}
+
+@keyframes rotates {
+    100% {
+        transform: rotate(360deg);
+    }
+}
